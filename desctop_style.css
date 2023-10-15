@@ -1,0 +1,10 @@
+@media screen and (min-width: 1024px) {
+    .img {
+        margin-right: 1%;
+        height: 163px;
+    }
+
+    .image {
+        height: 610px;
+    }
+}

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "MontLight";
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: aliceblue;
+}
+
+@font-face {
+    font-family: MontLight;
+    src: url("Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: MontThin;
+    src: url("Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: MontSemiBold;
+    src: url("Montserrat-SemiBold.ttf");
+}
+
+h1 {
+    font-size: 32px;
+    font-family: "MontSemiBold";
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+  
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: running;
+}
+  
+.marquee__content {
+    font-size: 10vw;
+    padding: 0 2vw;
+}
+  
+  
+@keyframes marquee {
+    0% {
+      transform: translate3d(var(--move-initial), 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+  
+
+.description {
+    margin-top: 5%;
+}
+
+.first {
+    width: auto;
+    margin-top: 5%;
+}
+
+.line {
+    height: 45vh;
+    width: 2vw;
+    background-color: rgba(255, 0, 0, 0.528);
+}
+
+.step {
+    background-color: white;
+    box-shadow: 16px 15px 70px gray;
+}
+
+.steps {
+    margin-left: 20px;
+}
+
+.mainName {
+    background-color: rgba(255, 0, 0, 0.311);
+}
+
+.line1 {
+    height: 11vh;
+    width: 2vw;
+    background-color: red;
+}
+
+h2 {
+    margin-top: 5%;
+}
+
+.start {
+    margin-top: 5%;
+}
+
+.image {
+    height: 210px;
+}
+
+ul {
+    list-style-type: square;
+    font-family: "MontSemiBold";
+    margin-top: 5%;
+}
+
+.info {
+    margin-top: 2%;
+}
+
+marquee {
+    margin-top: 5%;
+}
+
+.img {
+    margin-right: 2%;
+    height: 80px;
+}
